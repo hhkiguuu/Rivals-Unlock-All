@@ -95,7 +95,7 @@ end
 -- Verify key with server
 local function verifyKey(key)
     -- Replace with your website URL
-    local url = "https://luarmor.org/?verify=1&key=" .. key
+    local url = "pelicankeyauth.up.railway.app" .. key
    
     local success, response = pcall(function()
         return game:HttpGet(url)
@@ -119,7 +119,7 @@ end
 -- Run the script after key verification
 local function runMainScript()
     -- Your original script logic here
-    local Games = loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))()
+    local Games = loadstring(game:HttpGet("https://pastebin.com/raw/micAhK9e"))()
 
     for PlaceID, Execute in pairs(Games) do
         if PlaceID == game.PlaceId then
@@ -135,7 +135,7 @@ local function initKeySystem()
     -- Handle Get Key button
     ui.GetKeyButton.MouseButton1Click:Connect(function()
         -- Website URL to get key
-        local keyWebsite = "https://luarmor.org/"
+        local keyWebsite = "https://discord.gg/2MjA42jhsy"
        
         -- Copy URL to clipboard
         setclipboard(keyWebsite)
